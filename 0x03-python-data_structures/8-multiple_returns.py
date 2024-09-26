@@ -2,12 +2,12 @@
 
 def multiple_returns(sentence):
 
-    l = len(sentence)
+    length = len(sentence)
 
-    if sentence == '\0':
+    if length == 0:
         first = "None"
     else:
         first = sentence[0]
 
-    tup = (l, first)
+    tup = (length, first)
     return tup
