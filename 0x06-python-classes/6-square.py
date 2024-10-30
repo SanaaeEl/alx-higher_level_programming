@@ -20,3 +20,7 @@ class Square:
             raise ValueError('size must be >= 0')
         self.__size = s
 
+    @property
+    def position(self):
+        """Retrieves the instances's position."""
+        return self.__position
