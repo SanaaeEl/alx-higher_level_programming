@@ -28,6 +28,10 @@ class Square:
     @position.setter
     def position(self, pos):
         """Sets an instances's position."""
-        if isinstance(pos, tuple) and len(pos) == 2
-        and all(isinstance(i, int) and i > 0 for i in pos):
+        if (
+                isinstance(pos, tuple) and len(pos) == 2
+                and all(isinstance(i, int) and i > 0 for i in pos)
+            ):
             self.__position = pos
+        else:
+            raise TypeError('position must be a tuple of 2 positive integers')
