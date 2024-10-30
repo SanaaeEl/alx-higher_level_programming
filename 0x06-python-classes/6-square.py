@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Define a class square
 (with methods and instance attributes).
-         Args:
+    Attributes:
             size (int): size of the square.
             position (tuple): position of the square.
 """
