@@ -17,9 +17,9 @@ class Square:
     @size.setter
     def size(self, s):
         if not isinstance(s, int):
-            raise TypeError('size must be an integer')
+            raise TypeError("size must be an integer")
         if s < 0:
-            raise ValueError('size must be >= 0')
+            raise ValueError("size must be >= 0")
         self.__size = s
 
     @property
@@ -34,7 +34,7 @@ class Square:
                 or len(pos) != 2
                 or not all(isinstance(i, int) for i in pos)
                 or all(i >= 0 for i in pos)):
-            raise TypeError('position must be a tuple of 2 positive integers')
+            raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = pos
 
     def area(self):
