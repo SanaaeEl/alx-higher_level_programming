@@ -4,7 +4,11 @@
 
 
 class Square:
-    """ Class that defines a square by size and position"""
+    """ Class that defines a square by size and position
+
+        Methods:
+            area(self): returns the current square area
+            my_print(self): prints in stdout the square with the character #"""
 
     def __init__(self, size=0, position=(0, 0)):
         """Initializes Square instances"""
