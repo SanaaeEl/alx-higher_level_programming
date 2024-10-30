@@ -10,12 +10,10 @@ class Square:
 
     @property
     def size(self):
-        """Retrieves the instances's size."""
         return self.__size
 
     @size.setter
     def size(self, s):
-        """Sets the instances's size."""
         if not isinstance(s, int):
             raise TypeError('size must be an integer')
         if s < 0:
@@ -24,7 +22,6 @@ class Square:
 
     @property
     def position(self):
-        """Retrieves the instances's position."""
         return self.__position
 
     @position.setter
