@@ -24,3 +24,10 @@ class Square:
     def position(self):
         """Retrieves the instances's position."""
         return self.__position
+
+    @position.setter
+    def position(self, pos):
+        """Sets an instances's position."""
+        if isinstance(pos, tuple) and len(pos) == 2
+        and all(isinstance(i, int) and i > 0 for i in pos):
+            self.__position = pos
