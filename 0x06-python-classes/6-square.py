@@ -7,3 +7,17 @@ class Square:
     def __init__(self, size=0, position=(0, 0)):
         self.__size = size
         self.__position = position
+
+    @property
+    def size(self):
+        """Retrieves the instance's size."""
+        return self.__size
+
+    @size.setter
+    def size(self, s):
+        """Sets the instance's size."""
+        if not isinstance(s, int):
+            raise TypeError('size must be an integer')
+        if s < 0:
+            raise ValueError('size must be >= 0')
+        self.__size = s
