@@ -17,10 +17,12 @@ class Square:
 
     @property
     def size(self):
+        """Retrieves an instances's size"""
         return self.__size
 
     @size.setter
     def size(self, value):
+        """Setts an instances's size"""
         if not isinstance(value, int):
             raise TypeError('size must be an integer')
         if value < 0:
@@ -29,10 +31,12 @@ class Square:
 
     @property
     def position(self):
+        """Retrieves an instances's position"""
         return self.__position
 
     @position.setter
     def position(self, pos):
+        """Setts an instances's position"""
         if isinstance(pos, tuple) and len(pos) == 2
         and all(isinstance(i, int) and i > 0 for i in pos):
             self.__position = pos
